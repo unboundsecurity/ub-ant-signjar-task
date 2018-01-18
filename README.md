@@ -44,8 +44,8 @@ In additiona, some EKM specific attributes are included to support using with th
 
 Attribute       | Description                                     | Required | Default
 ----------------|-------------------------------------------------|----------|-------------------------------------------------------------------------
-partition       | The EKM partition name to use                   | No       | The first partion on the partition list
-providerPath    | The path to the EKM Java provider               | No       | The path is computed based on the installation directory
-installationDir | The directory where the EKM client is installed | No       | `/usr/lib(64)` for Linux or  `C:\Program Files\DyadicSec` for Windows
+**partition**       | The EKM partition name to use                   | No       | The first partion on the partition list
+**providerPath**    | The path to the EKM Java provider               | No       | The path is computed based on the installation directory
+**installationDir** | The directory where the EKM client is installed | No       | `/usr/lib(64)` for Linux or  `C:\Program Files\DyadicSec` for Windows
 
 For the complete set of the standard `signjar` options, referr to [signjar][e668d98b].
