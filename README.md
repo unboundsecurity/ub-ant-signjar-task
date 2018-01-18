@@ -1,5 +1,6 @@
 # ub-ant-signjar-task
 
+The default signjar task is lacking some functionality realted to the usage of external providers.
 The `ub-ant-signjar-task` enables simple integration of Unbound EKM with the `signjar` provided by `ant`.
 
 ## Build
