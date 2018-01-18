@@ -7,7 +7,7 @@ The `ub-ant-signjar-task` extends this functionality to enable integration of th
   [e668d98b]: https://ant.apache.org/manual/Tasks/signjar.html "signjar"
 
 ## Build
-To build the prject run `ant` on the root directory of the project.
+To build the project run `ant` on the root directory of the project.
 
 ## Installation
 Copy the generated `.../dist/ub-sign-jar.jar` file to your `ant/lib` directory. Or use full path reference in your project `build.xml`, as follows:
@@ -40,10 +40,10 @@ Include the task in your project build.xml to sign jar files with EKM keys, as f
 ## EKM Specific Task Attributes
 
 All the existing `signjar` options are supported by this new task.
-In additiona, some EKM specific attributes are included to support using with the EKM cryptograhy provider:
+In addition, some EKM specific attributes are included to support using with the EKM cryptograhy provider:
 
-Attribute       | Description                                     | Required | Default
-----------------|-------------------------------------------------|----------|-------------------------------------------------------------------------
+Attribute           | Description                                     | Required | Default
+--------------------|-------------------------------------------------|----------|----------------------------------------------------------------------
 **partition**       | The EKM partition name to use                   | No       | The first partion on the partition list
 **providerPath**    | The path to the EKM Java provider               | No       | The path is computed based on the installation directory
 **installationDir** | The directory where the EKM client is installed | No       | `/usr/lib(64)` for Linux or  `C:\Program Files\DyadicSec` for Windows
