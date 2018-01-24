@@ -23,18 +23,12 @@ Copy the generated `.../dist/ub-sign-jar.jar` file to your `ant/lib` directory. 
 Include the task in your project build.xml to sign jar files with EKM keys, as follows:
 
 ```xml
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project name="UbSignJar" basedir="." default="ubsign">
-    <target name="ubsign">
-        <taskdef name="UbSignJar" classname="com.unboundtech.UbSignJar"/>
-
-    <UbSignJar
-			jar="test.jar"
-			signedjar="test.jar"
-			partition="part1"
-			alias="key-alias"
-			installationDir= "C:\Program Files\DyadicSec"/>
-    </target>
+   <target name="ubsign">
+      <taskdef name="UbSignJar" classname="com.unboundtech.UbSignJar" />
+      <UbSignJar jar="test.jar" signedjar="test.jar" partition="part1" alias="key-alias" installationDir="C:\Program Files\DyadicSec" />
+   </target>
 </project>
 ```
 ## EKM Specific Task Attributes
