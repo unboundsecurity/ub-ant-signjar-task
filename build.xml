@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns:ivy="antlib:org.apache.ivy.ant" name="Unboundtech Jar Signer" default="rebuild" basedir=".">
-   <description>Build file for EKM performance tool</description>
+   <description>Build file for Unboundtech Jar Signer</description>
    <taskdef resource="net/sf/antcontrib/antcontrib.properties" />
    <!-- set global properties for this build -->
    <property name="src" location="src" />
@@ -33,7 +33,7 @@
    </target>
 
    
-  <target name="compile" depends="resolve" description="compile EKM config sources">
+  <target name="compile" depends="resolve" description="compiles Unboundtech Jar Signer">
       <mkdir dir="${build}" />	  
       <mkdir dir="${lib}" />
       <javac srcdir="${src}" destdir="${build}" includeAntRuntime="false" target="1.6" source="1.6" deprecation="true">       
@@ -41,7 +41,7 @@
       </javac>
   </target>
   
-   <target name="dist" depends="compile" description="creates the EKM config jar file">
+   <target name="dist" depends="compile" description="creates Unboundtech Jar Signer">
       <mkdir dir="${dist}" />
       <jar jarfile="${dist}/ub-sign-jar.jar" duplicate="preserve">
          <fileset dir="${build}" />
