@@ -32,7 +32,7 @@ Include the task in your project build.xml to sign jar files with EKM keys, as f
 			jar="test.jar"
 			signedjar="test.jar"
 			partition="part1"
-			alias="key"
+			alias="key-alias"
 			installationDir= "C:\Program Files\DyadicSec"/>
     </target>
 </project>
