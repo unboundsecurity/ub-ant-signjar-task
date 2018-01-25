@@ -157,7 +157,7 @@ public class UbSignJar extends SignJar {
         String classpath = System.getProperty("java.class.path");
 
         this.addValue(cmd, "-J-cp");
-        this.addValue(cmd, String.format("-J%s;%s", classpath, providerFullPath));
+        this.addValue(cmd, String.format("-J%s%s%s", classpath, File.pathSeparator, providerFullPath));
     }
 
     /**
