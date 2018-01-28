@@ -6,6 +6,11 @@ The `ub-ant-signjar-task` extends this functionality to enable integration of th
 
   [e668d98b]: https://ant.apache.org/manual/Tasks/signjar.html "signjar"
 
+## Prerequisites
+* EKM client is installed
+* Ant (Version >= 1.93) is installed. Refer to https://ant.apache.org/bindownload.cgi for further details
+* The `lib:org.apache.ivy.ant` task is installed. Refer to http://ant.apache.org/ivy/history/2.2.0/ant.html for further details
+
 ## Build
 To build the project run `ant` on the root directory of the project.
 
