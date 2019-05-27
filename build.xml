@@ -37,7 +37,7 @@
   <target name="compile" depends="resolve" description="compiles Unboundtech Jar Signer">
       <mkdir dir="${build}" />	  
       <mkdir dir="${lib}" />
-      <javac srcdir="${src}" destdir="${build}" includeAntRuntime="false" target="1.6" source="1.6" deprecation="true">       
+      <javac srcdir="${src}" destdir="${build}" includeAntRuntime="false" target="1.7" source="1.7" deprecation="true">       
        <classpath refid="classpath" />
       </javac>
   </target>
