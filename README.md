@@ -39,7 +39,7 @@ Include the task in your project build.xml to sign jar files with EKM keys, as f
 <project name="UbSignJar" basedir="." default="ubsign">
    <target name="ubsign">
       <taskdef name="UbSignJar" classname="com.unboundtech.UbSignJar" />
-      <UbSignJar jar="test.jar" signedjar="test.jar" partition="part1" alias="key-alias" installationDir="C:\Program Files\DyadicSec" />
+      <UbSignJar jar="test.jar" signedjar="test.jar" partition="part1" alias="key-alias" storepass="" installationDir="C:\Program Files\DyadicSec" />
    </target>
 </project>
 ```
